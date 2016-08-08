@@ -1,0 +1,16 @@
+def AdditionProblems():
+    totalScore = 0
+    userScore = 0
+    numCorrect = 0
+    numOfProblems = 0
+    for problem in range(5):
+        firstNumber = random.randint(0,10)
+        secondNumber = random.randint(0, 10)
+        answer = firstNumber + secondNumber
+        userAnswer = raw_input(str(firstNumber) + ' + ' + str(secondNumber) + ' =' + ' ')
+        totalScore += 10
+        numOfProblems += 1
+        if answer == int(userAnswer):
+            userScore += 10
+            numCorrect += 1
+    return 'Out of a possible score of %d you scored %d with %d/%d correct answeres' %(totalScore, userScore, numCorrect, numOfProblems)
