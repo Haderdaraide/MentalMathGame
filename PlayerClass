@@ -1,0 +1,21 @@
+class Player(MathProblems):
+    def __init__(self, name, difficulty):
+        self.name = name
+        self.difficulty = difficulty
+        self.NumGamesPlayed = 0
+        self.NumGamesWon = 0
+        self.NumGamesLost = 0
+        
+    def getStats(self):
+        StatIntro = 'Here are your total game statistics'
+        PlayedStat = 'Total games played: ' + str(self.NumGamesPlayed)
+        WinStat = 'Total games won: ' + str(self.NumGamesWon)
+        LossStat = 'Total games lost: ' + str(self.NumGamesLost)
+        Stats = '%s\n%s\n%s\n%s' %(StatIntro, PlayedStat, WinStat, LossStat)
+        print Stats
+        
+    def getName(self):
+        return self.name
+    
+    def getDifficulty(self):
+        return self.difficulty
