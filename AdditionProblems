@@ -1,3 +1,5 @@
+import random
+
 def AdditionProblems():
     totalScore = 0
     userScore = 0
